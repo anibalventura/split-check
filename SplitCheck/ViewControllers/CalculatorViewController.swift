@@ -9,35 +9,50 @@ import UIKit
 
 class CalculatorViewController: UIViewController {
     
-    @IBOutlet weak var amoutTextField: UITextField!
+    private var calculator: Calculator = Calculator()
+    private var tipSelected: String = "0.10"
+    
+    @IBOutlet weak var billTextField: UITextField!
     @IBOutlet weak var zeroTipButton: UIButton!
     @IBOutlet weak var tenTipButton: UIButton!
     @IBOutlet weak var twentyTipButton: UIButton!
-    @IBOutlet weak var splitNumberLabel: UILabel!
+    @IBOutlet weak var peopleLabel: UILabel!
     
     @IBAction func tipButtonPressed(_ sender: UIButton) {
-        // Deselect all buttons.
         zeroTipButton.isSelected = false
         tenTipButton.isSelected = false
         twentyTipButton.isSelected = false
-        
-        // Select chosed button.
         sender.isSelected = true
+        
+        tipSelected =  String(sender.currentTitle!.dropLast())
+        
+        dismissKeyboard()
     }
     
     @IBAction func stepperPressed(_ sender: UIStepper) {
         let value = Int(sender.value)
-        splitNumberLabel.text = String(value)
+        peopleLabel.text = String(value)
+        
+        dismissKeyboard()
     }
     
     @IBAction func calculateButtonPressed(_ sender: UIButton) {
-        // Show result in modal view.
+        let bill = Double(billTextField.text!)!
+        let tip = Double(tipSelected)! / 100
+        let people = Int(peopleLabel.text!)!
+        
+        calculator.calculateTotal(bill: bill, tip: tip, people: people)
         self.performSegue(withIdentifier: "goToResult", sender: self)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "goToResult" {
             let resultViewController = segue.destination as! ResultViewController
+            resultViewController.split = calculator.split
         }
+    }
+    
+    private func dismissKeyboard() {
+        billTextField.endEditing(true)
     }
 }

@@ -36,7 +36,7 @@
                                 <rect key="frame" x="0.0" y="183.5" width="414" height="712.5"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="dEG-aM-pTo">
-                                        <rect key="frame" x="30" y="15" width="354" height="230"/>
+                                        <rect key="frame" x="30" y="15" width="354" height="228"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select tip" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nnr-dc-ydT">
                                                 <rect key="frame" x="0.0" y="0.0" width="354" height="36"/>
@@ -44,35 +44,32 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oPw-L0-2T4">
-                                                <rect key="frame" x="0.0" y="56" width="354" height="56"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="oPw-L0-2T4">
+                                                <rect key="frame" x="0.0" y="56" width="354" height="54"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y3L-bp-urF">
-                                                        <rect key="frame" x="0.0" y="0.0" width="118" height="56"/>
-                                                        <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="plain" title="0%">
-                                                            <fontDescription key="titleFontDescription" type="system" pointSize="35"/>
-                                                        </buttonConfiguration>
+                                                        <rect key="frame" x="0.0" y="0.0" width="118" height="54"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" title="0%"/>
                                                         <connections>
                                                             <action selector="tipButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cYT-Y4-8Zw"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Arw-d9-Wsj">
-                                                        <rect key="frame" x="118" y="0.0" width="118" height="56"/>
-                                                        <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="plain" title="10%">
-                                                            <fontDescription key="titleFontDescription" type="system" pointSize="35"/>
-                                                        </buttonConfiguration>
+                                                        <rect key="frame" x="118" y="0.0" width="118" height="54"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" title="10%"/>
                                                         <connections>
                                                             <action selector="tipButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Wtr-YP-DEd"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gQv-nr-a6o">
-                                                        <rect key="frame" x="236" y="0.0" width="118" height="56"/>
-                                                        <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="plain" title="20%">
-                                                            <fontDescription key="titleFontDescription" type="system" pointSize="35"/>
-                                                        </buttonConfiguration>
+                                                        <rect key="frame" x="236" y="0.0" width="118" height="54"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" title="20%"/>
                                                         <connections>
                                                             <action selector="tipButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6qx-Tc-IPY"/>
                                                         </connections>
@@ -80,13 +77,13 @@
                                                 </subviews>
                                             </stackView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose split" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tMZ-9d-uxj">
-                                                <rect key="frame" x="0.0" y="132" width="354" height="36"/>
+                                                <rect key="frame" x="0.0" y="130" width="354" height="36"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="BuX-FL-RKN">
-                                                <rect key="frame" x="0.0" y="188" width="354" height="42"/>
+                                                <rect key="frame" x="0.0" y="186" width="354" height="42"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SEH-Bf-0W7">
                                                         <rect key="frame" x="0.0" y="0.0" width="177" height="42"/>
@@ -156,8 +153,8 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="amoutTextField" destination="4c0-7R-jXr" id="uDF-TM-CPL"/>
-                        <outlet property="splitNumberLabel" destination="SEH-Bf-0W7" id="g4p-RY-5F1"/>
+                        <outlet property="billTextField" destination="4c0-7R-jXr" id="PJS-Z2-61H"/>
+                        <outlet property="peopleLabel" destination="SEH-Bf-0W7" id="FdE-LW-EUA"/>
                         <outlet property="tenTipButton" destination="Arw-d9-Wsj" id="KGG-fW-map"/>
                         <outlet property="twentyTipButton" destination="gQv-nr-a6o" id="aoG-t1-FRe"/>
                         <outlet property="zeroTipButton" destination="Y3L-bp-urF" id="7tw-Kp-TYy"/>
@@ -238,8 +235,8 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="amountPerPersonLabel" destination="KHh-B9-fzS" id="2Rd-r8-QrK"/>
-                        <outlet property="descriptionLabel" destination="KHh-B9-fzS" id="BJI-cn-QLg"/>
+                        <outlet property="descriptionLabel" destination="Pfs-Va-Hok" id="IbM-0V-q0B"/>
+                        <outlet property="totalPerPersonLabel" destination="N5V-wE-OIQ" id="9y8-6D-kNy"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yxk-cs-55j" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
