@@ -10,7 +10,7 @@ import UIKit
 class CalculatorViewController: UIViewController {
     
     private var calculator: Calculator = Calculator()
-    private var tipSelected: String = "0.10"
+    private var tipSelected: String = "10.0"
     
     @IBOutlet weak var billTextField: UITextField!
     @IBOutlet weak var zeroTipButton: UIButton!
