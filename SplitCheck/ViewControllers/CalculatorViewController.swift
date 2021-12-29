@@ -37,12 +37,21 @@ class CalculatorViewController: UIViewController {
     }
     
     @IBAction func calculateButtonPressed(_ sender: UIButton) {
-        let bill = Double(billTextField.text!)!
-        let tip = Double(tipSelected)! / 100
-        let people = Int(peopleLabel.text!)!
-        
-        calculator.calculateTotal(bill: bill, tip: tip, people: people)
-        self.performSegue(withIdentifier: "goToResult", sender: self)
+        if let bill = Double(billTextField.text!) {
+            let tip = Double(tipSelected)! / 100
+            let people = Int(peopleLabel.text!)!
+            
+            calculator.calculateTotal(bill: bill, tip: tip, people: people)
+            self.performSegue(withIdentifier: "goToResult", sender: self)
+        } else {
+            let alert = UIAlertController(
+                title: "There is no bill!",
+                message: "Please enter a bill amount.",
+                preferredStyle: .alert
+            )
+            alert.addAction(UIAlertAction(title: "OK", style: .default))
+            self.present(alert, animated: true, completion: nil)
+        }
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
