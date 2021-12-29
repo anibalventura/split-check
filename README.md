@@ -1,7 +1,7 @@
 # Split Check
 
 [![iOS](https://img.shields.io/static/v1?label=iOS&message=15.0&color=000000)](https://www.apple.com/ios/ios-15/)
-[![Swift](https://img.shields.io/static/v1?label=Swift&message=5.0&color=F05138)](https://developer.apple.com/swift/)
+[![Swift](https://img.shields.io/static/v1?label=Swift&message=5.5&color=F05138)](https://developer.apple.com/swift/)
 [![Xcode](https://img.shields.io/static/v1?label=Xcode&message=13.2&color=147EFB)](https://developer.apple.com/swift/)
 [![License](https://img.shields.io/static/v1?label=License&message=MIT&color=blue)](LICENCE)
 
@@ -20,7 +20,7 @@ Bill splitting and tip calculating app, build with UIKit and MVC pattern.
 ## Development
 
 - Development Target **15.0**
-- Swift **5.0**
+- Swift **5.5**
 - Xcode **13.2**
 
 ## Build
