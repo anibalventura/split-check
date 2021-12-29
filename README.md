@@ -7,7 +7,7 @@
 
 <p> <img src="repository_banner.png" align="center"/> </p>
 
-Easy to play memory game with emojis, build with UIKit and MVC pattern.
+Bill splitting and tip calculating app, build with UIKit and MVC pattern.
 
 ## Features
 
