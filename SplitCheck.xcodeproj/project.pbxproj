@@ -70,15 +70,12 @@
 		C593E967277CDF380012977D /* SplitCheck */ = {
 			isa = PBXGroup;
 			children = (
-				C593E968277CDF380012977D /* AppDelegate.swift */,
-				C593E96A277CDF380012977D /* SceneDelegate.swift */,
+				C5E9770F277E7029003DC639 /* App */,
 				C593E97C277CDFCB0012977D /* Models */,
 				C593E97D277CDFD50012977D /* Views */,
 				C593E97E277CDFDA0012977D /* ViewControllers */,
-				C5E9770E277E665A003DC639 /* Helpers */,
 				C593E971277CDF3A0012977D /* Assets.xcassets */,
 				C593E976277CDF3A0012977D /* Info.plist */,
-				C5E9770A277E6543003DC639 /* Localizable.strings */,
 			);
 			path = SplitCheck;
 			sourceTree = "<group>";
@@ -110,12 +107,15 @@
 			path = ViewControllers;
 			sourceTree = "<group>";
 		};
-		C5E9770E277E665A003DC639 /* Helpers */ = {
+		C5E9770F277E7029003DC639 /* App */ = {
 			isa = PBXGroup;
 			children = (
+				C593E968277CDF380012977D /* AppDelegate.swift */,
+				C593E96A277CDF380012977D /* SceneDelegate.swift */,
 				C5E9770C277E656A003DC639 /* Localizable.swift */,
+				C5E9770A277E6543003DC639 /* Localizable.strings */,
 			);
-			path = Helpers;
+			path = App;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
