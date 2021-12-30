@@ -1,0 +1,31 @@
+/*
+ Calculate View.
+ */
+
+/* Title to enter bill. */
+"9oN-vc-mCP.text" = "Inserte total cuenta";
+
+/* Placehoder text for bill. */
+"4c0-7R-jXr.placeholder" = "p.e. 123.45";
+
+/* Tip title. */
+"Nnr-dc-ydT.text" = "Selecciona propina";
+
+/* People title. */
+"tMZ-9d-uxj.text" = "Cantidad de personas";
+
+/* Calculate button. */
+"etH-Uw-vTu.configuration.title" = "Calcular";
+
+/*
+ Result View.
+ */
+
+/* Title for total amount. */
+"7hC-r2-Qdg.text" = "Total por persona";
+
+/* Result description message. */
+"Pfs-Va-Hok.text" = "Dividido entre 2 personas, con un 10% de propina.";
+
+/* ReCalculate button. */
+"Teb-py-avp.configuration.title" = "ReCalcular";

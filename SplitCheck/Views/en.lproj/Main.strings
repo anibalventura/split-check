@@ -1,0 +1,31 @@
+/*
+ Calculate View.
+ */
+
+/* Title to enter bill. */
+"9oN-vc-mCP.text" = "Enter bill total";
+
+/* Placehoder text for bill. */
+"4c0-7R-jXr.placeholder" = "e.g. 123.45";
+
+/* Tip title. */
+"Nnr-dc-ydT.text" = "Select tip";
+
+/* People title. */
+"tMZ-9d-uxj.text" = "Amount of people";
+
+/* Calculate button. */
+"etH-Uw-vTu.configuration.title" = "Calculate";
+
+/*
+ Result View.
+ */
+
+/* Title for total amount. */
+"7hC-r2-Qdg.text" = "Total per person";
+
+/* Result description message. */
+"Pfs-Va-Hok.text" = "Split between 2 people, with 10% tip.";
+
+/* ReCalculate button. */
+"Teb-py-avp.configuration.title" = "ReCalculate";

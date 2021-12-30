@@ -1,0 +1,27 @@
+/*
+ Localizable.strings
+ SplitCheck
+ 
+ Created by Anibal Ventura on 30/12/21.
+ 
+ */
+
+/*
+ Calculate View.
+ */
+
+/* Title of alert when there is no bill. */
+"alert-title" = "No hay monto!";
+
+/* Message of alert when there is no bill. */
+"alert-message" = "Por favor inserta el total de la cuenta.";
+
+/* Button of alert when there is no bill. */
+"alert-button" = "Esta bien";
+
+/*
+ Result View.
+ */
+
+/* Result description message. */
+"result-description %d %d" = "Dividido entre %d personas, con un %d%% de propina.";

@@ -17,7 +17,7 @@ class ResultViewController: UIViewController {
         super.viewDidLoad()
         
         totalPerPersonLabel.text = String(format: "%.2f", split!.total)
-        descriptionLabel.text = "Split between \(split!.people) people, with \(Int(split!.tip * 100))% tip."
+        descriptionLabel.text = Localizable.resultDescription(people: split!.people, tip: Int(split!.tip) * 100)
     }
     
     @IBAction func reCalculateButtonPressed(_ sender: UIButton) {
