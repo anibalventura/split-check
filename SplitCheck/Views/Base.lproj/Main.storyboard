@@ -220,8 +220,8 @@
                                     <action selector="reCalculateButtonPressed:" destination="f3q-UW-XJA" eventType="touchUpInside" id="Cw6-VM-DYs"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Split between 2 people, with 10% tip." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pfs-Va-Hok">
-                                <rect key="frame" x="0.0" y="382" width="390" height="129"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Split between 2 people, with 10% tip." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pfs-Va-Hok">
+                                <rect key="frame" x="20" y="382" width="350" height="129"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="129" id="bqe-WK-nby"/>
                                 </constraints>
@@ -235,9 +235,9 @@
                         <constraints>
                             <constraint firstItem="Pfs-Va-Hok" firstAttribute="top" secondItem="BZK-Tu-kbk" secondAttribute="bottom" constant="162" id="62X-OD-o9h"/>
                             <constraint firstItem="BZK-Tu-kbk" firstAttribute="leading" secondItem="wy7-h9-OON" secondAttribute="leading" id="6nE-tt-x13"/>
-                            <constraint firstItem="wy7-h9-OON" firstAttribute="trailing" secondItem="Pfs-Va-Hok" secondAttribute="trailing" id="QYF-pn-ChB"/>
+                            <constraint firstItem="wy7-h9-OON" firstAttribute="trailing" secondItem="Pfs-Va-Hok" secondAttribute="trailing" constant="20" id="QYF-pn-ChB"/>
                             <constraint firstItem="wy7-h9-OON" firstAttribute="trailing" secondItem="Teb-py-avp" secondAttribute="trailing" constant="50" id="SGK-mn-CsU"/>
-                            <constraint firstItem="Pfs-Va-Hok" firstAttribute="leading" secondItem="wy7-h9-OON" secondAttribute="leading" id="bbE-pN-gFP"/>
+                            <constraint firstItem="Pfs-Va-Hok" firstAttribute="leading" secondItem="wy7-h9-OON" secondAttribute="leading" constant="20" id="bbE-pN-gFP"/>
                             <constraint firstItem="Pfs-Va-Hok" firstAttribute="top" secondItem="KHh-B9-fzS" secondAttribute="top" constant="382" id="e7g-bI-AT9"/>
                             <constraint firstItem="Teb-py-avp" firstAttribute="leading" secondItem="wy7-h9-OON" secondAttribute="leading" constant="50" id="fh4-rz-TGD"/>
                             <constraint firstItem="wy7-h9-OON" firstAttribute="trailing" secondItem="BZK-Tu-kbk" secondAttribute="trailing" id="mYF-cZ-fBn"/>
