@@ -68,7 +68,6 @@
 				C593E97D277CDFD50012977D /* Views */,
 				C593E97E277CDFDA0012977D /* ViewControllers */,
 				C593E971277CDF3A0012977D /* Assets.xcassets */,
-				C593E973277CDF3A0012977D /* LaunchScreen.storyboard */,
 				C593E976277CDF3A0012977D /* Info.plist */,
 			);
 			path = SplitCheck;
@@ -87,6 +86,7 @@
 			isa = PBXGroup;
 			children = (
 				C593E96E277CDF380012977D /* Main.storyboard */,
+				C593E973277CDF3A0012977D /* LaunchScreen.storyboard */,
 			);
 			path = Views;
 			sourceTree = "<group>";

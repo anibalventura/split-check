@@ -138,6 +138,7 @@
                                 <state key="normal" title="Calculate"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Calculate" cornerStyle="capsule">
                                     <fontDescription key="titleFontDescription" type="system" pointSize="35"/>
+                                    <color key="baseBackgroundColor" red="0.86666666670000003" green="0.2901960784" blue="0.28235294119999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="calculateButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rcE-1Y-DK4"/>
