@@ -16,11 +16,17 @@ class ResultViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        totalPerPersonLabel.text = String(format: "%.2f", split!.total)
-        descriptionLabel.text = Localizable.resultDescription(people: split!.people, tip: Int(split!.tip * 100))
+        loadLabels()
     }
     
     @IBAction func reCalculateButtonPressed(_ sender: UIButton) {
         self.dismiss(animated: true, completion: nil)
+    }
+    
+    private func loadLabels() {
+        if let split = self.split {
+            totalPerPersonLabel.text = String(format: "%.2f", split.total)
+            descriptionLabel.text = Localizable.resultDescription(people: split.people, tip: Int(split.tip * 100))
+        }
     }
 }

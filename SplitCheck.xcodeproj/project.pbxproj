@@ -33,7 +33,6 @@
 		C593E981277CF38B0012977D /* CalculatorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorModel.swift; sourceTree = "<group>"; };
 		C593E983277CF6510012977D /* SplitModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplitModel.swift; sourceTree = "<group>"; };
 		C5E97702277E6486003DC639 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Main.strings; sourceTree = "<group>"; };
-		C5E97703277E6486003DC639 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		C5E97705277E64C3003DC639 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
 		C5E97709277E6543003DC639 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		C5E9770B277E6545003DC639 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -218,7 +217,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				C593E974277CDF3A0012977D /* Base */,
-				C5E97703277E6486003DC639 /* es */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
