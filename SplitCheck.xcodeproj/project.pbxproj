@@ -72,7 +72,7 @@
 				C5E9770F277E7029003DC639 /* App */,
 				C593E97C277CDFCB0012977D /* Models */,
 				C593E97D277CDFD50012977D /* Views */,
-				C593E97E277CDFDA0012977D /* ViewControllers */,
+				C593E97E277CDFDA0012977D /* Controllers */,
 				C593E971277CDF3A0012977D /* Assets.xcassets */,
 				C593E976277CDF3A0012977D /* Info.plist */,
 			);
@@ -97,13 +97,13 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
-		C593E97E277CDFDA0012977D /* ViewControllers */ = {
+		C593E97E277CDFDA0012977D /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
 				C593E96C277CDF380012977D /* CalculatorViewController.swift */,
 				C593E97F277CE09B0012977D /* ResultViewController.swift */,
 			);
-			path = ViewControllers;
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 		C5E9770F277E7029003DC639 /* App */ = {
