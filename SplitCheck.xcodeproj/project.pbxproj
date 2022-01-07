@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6539D58524932ECCC094ED7D /* Pods_SplitCheck.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2C675DA1190553208C1C99E /* Pods_SplitCheck.framework */; };
+		C51C82BF2788995000C6EC59 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C51C82BE2788995000C6EC59 /* Constants.swift */; };
 		C593E969277CDF380012977D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C593E968277CDF380012977D /* AppDelegate.swift */; };
 		C593E96B277CDF380012977D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C593E96A277CDF380012977D /* SceneDelegate.swift */; };
 		C593E96D277CDF380012977D /* CalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C593E96C277CDF380012977D /* CalculatorViewController.swift */; };
@@ -21,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C51C82BE2788995000C6EC59 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		C593E965277CDF380012977D /* SplitCheck.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SplitCheck.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C593E968277CDF380012977D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C593E96A277CDF380012977D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -36,6 +39,9 @@
 		C5E97709277E6543003DC639 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		C5E9770B277E6545003DC639 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
 		C5E9770C277E656A003DC639 /* Localizable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localizable.swift; sourceTree = "<group>"; };
+		D2C675DA1190553208C1C99E /* Pods_SplitCheck.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SplitCheck.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9A39535862DE7A99001AB3A /* Pods-SplitCheck.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SplitCheck.release.xcconfig"; path = "Target Support Files/Pods-SplitCheck/Pods-SplitCheck.release.xcconfig"; sourceTree = "<group>"; };
+		E4126D1F8C51264F36DC8B6D /* Pods-SplitCheck.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SplitCheck.debug.xcconfig"; path = "Target Support Files/Pods-SplitCheck/Pods-SplitCheck.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,16 +49,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6539D58524932ECCC094ED7D /* Pods_SplitCheck.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		71CFBD3AA6BA995C98D31960 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D2C675DA1190553208C1C99E /* Pods_SplitCheck.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C51C82BC2788924800C6EC59 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
 				C5E9770C277E656A003DC639 /* Localizable.swift */,
+				C51C82BE2788995000C6EC59 /* Constants.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -62,6 +78,8 @@
 			children = (
 				C593E967277CDF380012977D /* SplitCheck */,
 				C593E966277CDF380012977D /* Products */,
+				E670A2F009FD31E00A0A11EC /* Pods */,
+				71CFBD3AA6BA995C98D31960 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -124,6 +142,15 @@
 			path = App;
 			sourceTree = "<group>";
 		};
+		E670A2F009FD31E00A0A11EC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E4126D1F8C51264F36DC8B6D /* Pods-SplitCheck.debug.xcconfig */,
+				D9A39535862DE7A99001AB3A /* Pods-SplitCheck.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -131,9 +158,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C593E979277CDF3A0012977D /* Build configuration list for PBXNativeTarget "SplitCheck" */;
 			buildPhases = (
+				BC968F1FA0DD7FF6C914B9C6 /* [CP] Check Pods Manifest.lock */,
 				C593E961277CDF380012977D /* Sources */,
 				C593E962277CDF380012977D /* Frameworks */,
 				C593E963277CDF380012977D /* Resources */,
+				78350FF08480451F224D1B9D /* [CP] Embed Pods Frameworks */,
+				C51C82BD2788967600C6EC59 /* Swift Lint */,
 			);
 			buildRules = (
 			);
@@ -192,6 +222,66 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		78350FF08480451F224D1B9D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SplitCheck/Pods-SplitCheck-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SplitCheck/Pods-SplitCheck-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SplitCheck/Pods-SplitCheck-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BC968F1FA0DD7FF6C914B9C6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SplitCheck-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C51C82BD2788967600C6EC59 /* Swift Lint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Swift Lint";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C593E961277CDF380012977D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -204,6 +294,7 @@
 				C593E969277CDF380012977D /* AppDelegate.swift in Sources */,
 				C593E96B277CDF380012977D /* SceneDelegate.swift in Sources */,
 				C593E980277CE09B0012977D /* ResultViewController.swift in Sources */,
+				C51C82BF2788995000C6EC59 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -359,9 +450,9 @@
 		};
 		C593E97A277CDF3A0012977D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4126D1F8C51264F36DC8B6D /* Pods-SplitCheck.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = C4T7T8FXHB;
@@ -390,9 +481,9 @@
 		};
 		C593E97B277CDF3A0012977D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D9A39535862DE7A99001AB3A /* Pods-SplitCheck.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = C4T7T8FXHB;

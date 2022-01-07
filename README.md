@@ -19,11 +19,19 @@ Bill splitting and tip calculating app, build with UIKit and MVC pattern.
 
 ## Development
 
+- [UIKit](https://developer.apple.com/documentation/uikit)
+- MVC
+- [CocoaPods](https://cocoapods.org)
 - Development Target **15.0**
 - Swift **5.5**
 - Xcode **13.2**
 
-## Build
+### Dependencies
+
+- [SwiftLint](https://cocoapods.org/pods/SwiftLint)
+- [IQKeyboardManagerSwift](https://cocoapods.org/pods/IQKeyboardManagerSwift)
+
+### Build
 
 Clone the repository and run!
 
