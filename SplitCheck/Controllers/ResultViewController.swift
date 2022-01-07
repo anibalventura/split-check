@@ -26,7 +26,7 @@ class ResultViewController: UIViewController {
     private func loadLabels() {
         if let split = self.split {
             totalPerPersonLabel.text = String(format: "%.2f", split.total)
-            descriptionLabel.text = Localizable.resultDescription(people: split.people, tip: Int(split.tip * 100))
+            descriptionLabel.text = Localizable.Result.resultDescription(people: split.people, tip: Int(split.tip * 100))
         }
     }
 }

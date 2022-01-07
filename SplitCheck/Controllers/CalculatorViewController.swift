@@ -45,11 +45,11 @@ class CalculatorViewController: UIViewController {
             self.performSegue(withIdentifier: "goToResult", sender: self)
         } else {
             let alert = UIAlertController(
-                title: Localizable.alertTitle,
-                message: Localizable.alertMessage,
+                title: Localizable.Calculate.alertTitle,
+                message: Localizable.Calculate.alertMessage,
                 preferredStyle: .alert
             )
-            alert.addAction(UIAlertAction(title: Localizable.alertButton, style: .default))
+            alert.addAction(UIAlertAction(title: Localizable.Calculate.alertButton, style: .default))
             self.present(alert, animated: true, completion: nil)
         }
     }
